@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post '/signin', to: 'users#signin'
   get '/validate', to: 'users#validate'
   get '/lists', to: 'lists#show'
-  root "application#index"
+  root 
+  root to: "application#index"
+
 
 end
